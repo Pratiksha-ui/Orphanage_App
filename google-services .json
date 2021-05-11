@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811397823800",
+    "project_id": "orphange-9571e",
+    "storage_bucket": "orphange-9571e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811397823800:android:adc445deb6397000d555cd",
+        "android_client_info": {
+          "package_name": "com.example.mission_of_joy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811397823800-skdvc2lt3r54qesuo3l9e7h1dsrt46u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpmL8236v0QYi6qEVLP3Cf3T9HSZTVGC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811397823800-skdvc2lt3r54qesuo3l9e7h1dsrt46u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

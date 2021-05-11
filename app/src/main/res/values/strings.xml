@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mission_of_Joy</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="register">Register</string>
+</resources>
