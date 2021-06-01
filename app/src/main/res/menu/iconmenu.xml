@@ -11,9 +11,9 @@
 <item android:id="@+id/menu_Events"
     android:icon="@drawable/ic_baseline_emoji_events_24"
     android:title="Events"/>
-<item android:id="@+id/menu_map"
-    android:icon="@drawable/ic_baseline_map_24"
-    android:title="MAPS"/>
+<item android:id="@+id/gallery"
+    android:icon="@drawable/ic_baseline_photo_24"
+    android:title="Gallery"/>
 <item android:id="@+id/menu_JoinUs"
     android:icon="@drawable/ic_baseline_back_hand_24"
     android:title="JOIN US"/>

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -93,7 +94,7 @@ public class Login_Activity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_login_);
+        setContentView(R.layout.activity_login);
 
 
         signin = findViewById(R.id.signin);
@@ -122,10 +123,12 @@ public class Login_Activity extends AppCompatActivity {
                         final String password_data = Pwd_var.getEditText().getText().toString();
 
 
+                       // FirebaseApp.initializeApp();
+
                         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
                         DatabaseReference databaseReference = firebaseDatabase.getReference("datauser");
 
-                        Query check_username = databaseReference.orderByChild("name").equalTo(username_data);
+                        Query check_username = databaseReference.orderByChild("name_s").equalTo(username_data);
 
                         check_username.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
@@ -133,7 +136,7 @@ public class Login_Activity extends AppCompatActivity {
                                 if (snapshot.exists()) {
                                     username_var.setError(null);
                                     username_var.setErrorEnabled(false);
-                                    String passwordcheck = snapshot.child(username_data).child("password").getValue(String.class);
+                                    String passwordcheck = snapshot.child(username_data).child("password_s").getValue(String.class);
                                     if (passwordcheck.equals(password_data)) {
                                         Pwd_var.setError(null);
                                         Pwd_var.setErrorEnabled(false);
@@ -179,4 +182,3 @@ public class Login_Activity extends AppCompatActivity {
         });
     }
 }
-

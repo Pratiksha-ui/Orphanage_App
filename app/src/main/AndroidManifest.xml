@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mission_of_joy">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mission_of_Joy">
-        <activity android:name=".signup"></activity>
-        <activity android:name=".Home_Page" />
+        <activity android:name=".FullScreenActivity"></activity>
+        <activity android:name=".Gallery" />
+        <activity android:name=".Money" />
+        <activity android:name=".Clothes" />
+        <activity android:name=".Food" />
+        <activity android:name=".Logout" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".JoinUs" />
+        <activity android:name=".Events" />
+        <activity android:name=".Donation" />
         <activity android:name=".Login_Activity" />
+        <activity android:name=".signup" />
+        <activity android:name=".Home_Page" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
